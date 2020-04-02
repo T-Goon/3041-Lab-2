@@ -17,6 +17,8 @@ Build an interactive Bike WPI web app similar to this one: http://users.wpi.edu/
 **Step 0:** Fork this repository ([Help](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)) so that you have a copy of if in your Github account. 
 
 **More Step 0:** Clone your *lab2* repository so that you have a local copy on your computer
+
+**More Step 0:** Copy all files from your Lab 1 into the new Lab 2 directory. 
  
 **Step 1:** In the previous lab we created a website styled for mobile, then we customized it to behave like a native app. Now, we will add a separate CSS file for landscape orientation.
  
