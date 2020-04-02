@@ -67,7 +67,7 @@ Remove all the `#main_nav` styles in *landscape.css*. Replace the definitions of
 ✔️ Checkpoint: 
 [Test the application](https://github.com/cs3041-hci-D20/lab0#5-access-your-web-page) on a device, when you rotate the device (or simulator) your page should look something like this:
 
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image2.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image2.png)
   
 Ok. Now, that we have a webapp that responds to device orientation. We can move on and add additional pages to our app.
  
@@ -123,7 +123,7 @@ video {
 Now, write your code to style your `<audio>` tag. No need to define transitions for your `<audio>` tag.
  
 When you’re done, things should look something like this:
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image4.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image4.png)
  
 Adding a button to the `<header>`
  
@@ -167,7 +167,7 @@ Note that we do not override the previous style definitions of  header, we just 
  
 ⚙️ Now test your page. Things should look something like this:
 
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image3.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image3.png)
  
 Note that your new back button is not functional yet. We need to use JavaScript to add interactive behavior.
  
@@ -231,7 +231,7 @@ margin-right: auto;
  ```
 Your page should look something like this:
  
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image6.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image6.png)
 
 To **make this page interactive** we will **add JavaScript** code.
 
