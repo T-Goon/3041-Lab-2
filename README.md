@@ -286,7 +286,7 @@ function promptButtonClicked() {
 
 ⚙️ Test your code. 
 After clicking on the Prompt button and entering a string, your page should look something like that:
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image5.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image5.png)
 
 **Optional step:** style your `<ul>` and `<li>` elements by adding corresponding [CSS definitions](https://www.w3schools.com/CSS/css_list.asp) in the style.css
 
@@ -324,7 +324,7 @@ function confirmButtonClicked() {
 ```
 ⚙️ Test your code. 
 After clicking on the Confirm button, your page should look something like that:
-![](https://github.com/CS3041-D20/lab2/blob/master/media/image1.png)
+![](https://github.com/cs3041-hci-D20/lab2/blob/master/media/image1.png)
  
 **Note** that in the previous screen captures the button *Change bike* was shown. Next we will add JavaScript code that hides this button when the page is done loading. When the user clicks *Confirm* the *Change* bike button will become visible again. 
 
