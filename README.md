@@ -73,7 +73,7 @@ Ok. Now, that we have a webapp that responds to device orientation. We can move 
  
 ## Working with video and audio
  
-**Step 3:** Create a new HTML 5 file ride.html (if you don’t already have one). Working in ride.html, add a <header> to the file and make its style consistent with the style we defined for index.html. The text in the header should be “Sights and Sounds”.
+**Step 3:** Create a new HTML 5 file ride.html (if you don’t already have one). Working in ride.html, add a '<header>' to the file and make its style consistent with the style we defined for index.html. The text in the header should be “Sights and Sounds”.
  
 **Step 4:** Working in *ride.html* add the following lines inside the `<body>`:
  
