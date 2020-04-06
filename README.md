@@ -145,7 +145,7 @@ height: 30px;
 /*These lines position the back button inside the header*/
 position:absolute;
 left:16px;
-top:8px; 
+top:8px; }
 ```
  
 Note that this style only applies to buttons with the class property sets to back.
