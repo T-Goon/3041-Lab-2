@@ -140,7 +140,8 @@ Working in *style.css*, add the following lines:
 ```
 button.back{
  /*These lines override the previous styling of buttons*/
--webkit-border-image: url("greyButton.png") 0 14 0 14 stretch;
+background: url("greyButton.png");
+border-image: url("greyButton.png");
 width:60px;
 height: 30px;
  
@@ -226,8 +227,9 @@ margin-right: auto;
 /* add your code to set top and bottom margins */
  
 /*add an image to your button*/
--webkit-border-image: url("orangeButton.png") 0 14 0 14 stretch;
- 
+background: url("orangeButton.png");
+border-image: url("orangeButton.png");
+
 /*set width and height for the button*/
 }
  ```
