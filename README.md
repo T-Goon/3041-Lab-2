@@ -27,7 +27,7 @@ Build an interactive Bike WPI web app similar to this one: http://users.wpi.edu/
 Create a new CSS file named *landscape.css* and save it in your project directory. Copy its content from *style.css* and then make style changes (e.g. change the background color of the `<header>` or `<body>`).
 In addition, let's change the style of the `<nav>` tag. We will aim for an iOS menu style. 
 Remove all the `#main_nav` styles in *landscape.css*. Replace the definitions of #main_nav as following:
-```
+```css
 #main_nav ul {
 	list-style: none;
 	padding: 0;
@@ -61,7 +61,7 @@ Remove all the `#main_nav` styles in *landscape.css*. Replace the definitions of
 }
 ``` 
 **Step 2:** Now, we need to go back to index.html and add separate links to portrait and to landscape orientations. Replace the current link to a stylesheet link with the following lines:
-```
+```html
 <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
  
 <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
@@ -80,7 +80,7 @@ Ok. Now, that we have a webapp that responds to device orientation. We can move 
 **Step 4:** Working in *ride.html* add the following lines inside the `<body>`:
  
 HTML5 defines a new element, which specifies a standard way to embed a video/movie on a web page: the `<video>` element.
-```
+```html
 <p> Playing around: </p>
 <video width="300" height="220" controls>
 	<source src="Bear_movie.mp4" type="video/mp4">
@@ -93,7 +93,7 @@ You should also insert text content between the `<video>` and `</video>` tags fo
 
 The `<video>` element allows multiple `<source>` elements. `<source>` elements can link to different video files. The browser will use the first recognized format.
 HTML5 also defines a new element, which specifies a standard way to embed an audio file on a web page: the `<audio>` element.
-```
+```html
 <p> Horsing around: </p>
 <audio width=300 controls>
   	<source src="horse.ogg" type="audio/ogg">
@@ -110,7 +110,7 @@ The `<audio>` element allows multiple `<source>` elements. `<source>` elements c
 First, add style for your `<video>` tag by setting its border, padding, margin-top, margin-bottom, and border-radius.
  
 Also use the following example to define the video transitions style.
-```
+```css
 video {
  	/* add your style definitions here */
  
@@ -130,14 +130,14 @@ When you’re done, things should look something like this:
 Adding a button to the `<header>`
  
 **Step 5:** Next, let’s add a back button. Working in ride.html add the following line to the `<body>`:  	
-```
+```html
 <button class="back">Back</button>
 ```
  
 We will use CSS to position this button in the header.
  
 Working in *style.css*, add the following lines:
-```
+```css
 button.back{
  /*These lines override the previous styling of buttons*/
 border-image: url("greyButton.png");
@@ -158,11 +158,11 @@ We override the style definitions of general buttons, then we use absolute posit
 ⚙️ Test your code.
  
 It appears that you should shift the text in the `<header>` to the right. Note that we only want to shift the `<header>` text in pages that include a back button (i.e. all the secondary pages). Thus, we will set the class property in the `<header>` of those pages to “secondary”. Working in *ride.html*, add a class property to the `<header>`:
-```
+```html
 <header class="secondary">Sights and sounds</header>
 ```
 Now, to shift the text in the `<header>` to the right, we will go back to *style.css* and add the following lines:
-```
+```css
 header.secondary{   
 padding-left: 75px;
 }
@@ -190,7 +190,7 @@ Many things could happen while your web app is being displayed – buttons are b
 Whenever an event occurs there is an opportunity for JavaScript code to handle it. Our job is to supply code that will be invoked when an event occurs. We do not have to handle all events but handling events is our mechanism for adding interactive behavior to an otherwise static webpage.
 
 **Step 6:**  To make our back button interactive we need to handle its onclick event. In ride.html change the definition of the back button with the following line:
-```
+```html
 <button class="back" onclick="location.href='index.html';">Back</button>
 ```
 Now, when the user clicks the back button, the current page displayed will change to the page in the specified url.  The Location object provided by JavaScript and contains information about the current URL. We can access and change its properties as needed. To learn more about the Location object click here.
@@ -200,7 +200,7 @@ Now, when the user clicks the back button, the current page displayed will chang
 **Step 7:** Create a new HTML 5 file Buttons.html. Working in Buttons.html, make its style consistent with the style we defined for *index.html*
  
 Add the following `<body>` to your file:
-```
+```html
 <body>   
 <header class="secondary"> Reserve your bike</header>
 <button class="back" onClick="location.href='index.html';">Back</button>
@@ -218,7 +218,7 @@ Add the following `<body>` to your file:
 </body>
 ```
 To style our page so that the buttons appear in the center add and complete the following code to your style.css:
-```
+```css
 button {
  /*center the button*/
 display: block;
@@ -242,7 +242,7 @@ Your page should look something like this:
 To **make this page interactive** we will **add JavaScript** code.
 
 **Step 8:** Working in Buttons.html, add the following JavaScript code to the onclick event of `alertButton`:
-```
+```js
 alert(‘welcome!’);
 ```
 [please note: you may need to type in the quotation marks yourself as the copy and paste sometimes results in the wrong character being used]
@@ -254,7 +254,7 @@ What does the alert function (which is provided by JavaScript) do?
 ### Defining Functions, DOM Manipulation
  
 **Step 9:** add the following JavaScript code to the onclick event of `promptButton`:
-```
+```js
 promptButtonClicked();
 ```
 
@@ -269,7 +269,7 @@ To do that we’ll create a new `<li>` element that will hold the string entered
 We will add the implementation of `promptButtonClicked` within `<script>` tags at the end (but within) the `<body>` section. 
 
 Study the following code, and then add it to the `<body>` section:
-```
+```html
 <script>
 function promptButtonClicked() {     	
 	/*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
@@ -308,7 +308,7 @@ To do so the function will:
 
 Study the following code, and then add it.
 **Note** that the last two lines of codes are missing; add them to your code based on the previous example
-```
+```js
 function confirmButtonClicked() {  
 	/*Confirm displays a message and returns true if OK is clicked and a false if Cancel is clicked. 	You might use this for simple input */  
 	var bool=confirm("Are you sure?");
@@ -341,7 +341,7 @@ To do so we will need to first write code that handles the onload event generate
 **Step 11:** add the following JavaScript code to the onload event of the `<body>` element: `initBody();`
  
 Next we need to implement this function. Study the function and then add the following code within the same `<script>` tags of `promptButtonClicked`.
-``` 
+```js
 function initBody() {
 	// retrieve the changeButton element from the DOM and hide it
 	document.getElementById("changeButton").style.visibility="hidden";  	 
@@ -367,7 +367,7 @@ When the *Change bike* button is clicked the image of the bicycle on the page wi
  
 Next, define a global array variable by adding the following line of code to the `<head>` element:
 
-```
+```html
 <script>
 	var bikeArr=new Array("Bike.jpg","bike1.jpg","Bike2.jpg","Bike3.jpg","Bike4.jpg");
 </script>
