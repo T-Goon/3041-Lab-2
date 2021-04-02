@@ -55,6 +55,7 @@ p{
 }
     
 #main_nav ul li a{
+    display: block;
     text-decoration: none;
 }
     
