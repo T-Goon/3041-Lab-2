@@ -1,5 +1,12 @@
 # Lab 2:  More HTML 5 and CSS, Introducing JavaScript
+
+Lab assignment 2 for WPI class CS 3041 Human Computer Interaction. Uses HTML and CSS to create and style a web app for both desktop and mobile platforms. Also uses Javascript to allow the web app to be interactive.
+
+The website can be viewed at: https://t-goon.github.io/3041-Lab-2/
+
+More details about the assignment can be found below.
  
+*****************
 In this lab we will continue to develop our mobile web app. You will learn to:
  
 - Add a separate CSS for landscape orientation
